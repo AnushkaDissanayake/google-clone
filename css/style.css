@@ -30,47 +30,212 @@ header{
     justify-content: flex-end;
     align-items: center;
 }
-header> a svg{
+a:hover{
+    text-decoration: underline;
+}
+
+
+#apps {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+    border-radius: 100%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+#apps:hover {
+    background-color: rgba(60, 64, 67, 0.08);
+}
+
+#apps > svg {
+    width: 24px;
+    height: 24px;
     fill: #5f6368;
 }
-#images{
+
+#images {
     padding: 0 15px;
 }
 
-#apps{
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 4px;
-}
-#appas:hover{
-    background-color: rgba(60, 64, 67, 0.8);
-}
-#sign-in{
+#sign-in {
     font-size: 14px;
     line-height: 1rem;
     font-weight: 500;
+    color: white;
     background-color: rgb(26, 115, 232);
-    padding: 9px 23px;
     border: 1px solid transparent;
     border-radius: 4px;
-    color: #fff;
+    padding: 9px 23px;
     margin: 0 12px 0 8px;
     min-width: 96px;
+    text-align: center;
+    letter-spacing: .25px;
 }
+
 #sign-in:hover{
+    text-decoration: none;
     background-color: #1b66c9;
-    box-shadow: 0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);
+    box-shadow:  0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);
 }
-#sign-in:hover{
+
+#sign-in:focus{
     background-color: #1c5fba;
-    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+    box-shadow:  0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
 }
-#sign-in:hover{
+
+#sign-in:active{
     background-color: #1b63c1;
     box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
 }
+
+
+/* main */
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#logo{
+    min-height: 92px;
+    max-height: 290px;
+    height: calc(100% - 560px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#logo>img{
+    max-height: 92px;
+}
+#search-container{
+    height: 160px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+#search-container>.wrapper{
+    /* background-color: #1b63c1; */
+    width: 584px;
+    height: 100%;
+    padding-top:6px;
+}
+#search-bar{
+    height: 46px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+}
+#search-bar:hover{
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+#search-bar>div{
+    padding: 0px 8px 0 14px;
+    display: flex;
+    justify-content: space-between;
+}
+#search-icon{
+    padding-right: 13px;
+    height: 44px;
+    width: 33px;
+    line-height: 42px;
+}
+#search-icon svg{
+    width: 20px;
+    height: 20px;
+    fill: #9aa0a6;
+    vertical-align: middle;
+}
+#search-bar>div input{
+    width: 100%;
+    height:42px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+#mic{
+    width: 40px;
+    height: 44px;
+    line-height: 42px;
+    padding: 0 8px;
+    background-color:transparent;
+    cursor: pointer;
+}
+#mic>svg{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.wrapper .btn-container{
+    width: 100%;
+    height: 88px;
+    /* background-color: #5f6368; */
+    padding-top:18px ;
+
+}
+.wrapper .btn-container>div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.wrapper .btn-container>div>input{
+    height: 36px;
+    margin: 11px 6px;
+    padding: 0 16px;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    line-height: 27px;
+    color: #3c4043;
+    user-select: none;
+    cursor: pointer;
+
+}
+.wrapper .btn-container>div>input:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    /* color: #202124; */
+    
+}
+
+#lang{
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+#lang>div{
+    width: 194.41px;
+    height: 28px;
+    font-size: small;
+    color: #4d5156;
+    padding-right:2px ;
+    display: inline-block;
+    line-height: 28px;
+    
+}
+#lang>div>span{
+    
+}
+#lang>div a{
+    padding: 0 3px;
+    text-decoration: none;
+    color: #1a0dab;
+}
+#lang>div a:last-child{
+    padding: 0 0px;
+    padding-left: 6.8px;
+}
+/* body>section{
+    min-width: 978px;
+} */
