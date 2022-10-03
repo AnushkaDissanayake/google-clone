@@ -16,23 +16,61 @@ body{
     clear: both;
 }
 
-header{
-    width:100vw ;
-    height: 60px;
-    background-color: aqua;
-    padding: 6px;
-    display: flex;
-    flex-direction: row-reverse;
-}
 header> a{
     display: block;
-    background-color: green;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 13px;
+    line-height: 24px;
 }
 
-#top-bar>div{
-    height:100%;
-    width:317.59px;
-    padding:0 4px 0 32px;
-    background-color: red;
+header{
+    height: 60px;
+    padding: 6px;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header> a svg{
+    fill: #5f6368;
+}
+#images{
+    padding: 0 15px;
+}
+
+#apps{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+}
+#appas:hover{
+    background-color: rgba(60, 64, 67, 0.8);
+}
+#sign-in{
+    font-size: 14px;
+    line-height: 1rem;
+    font-weight: 500;
+    background-color: rgb(26, 115, 232);
+    padding: 9px 23px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    margin: 0 12px 0 8px;
+    min-width: 96px;
+}
+#sign-in:hover{
+    background-color: #1b66c9;
+    box-shadow: 0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);
+}
+#sign-in:hover{
+    background-color: #1c5fba;
+    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}
+#sign-in:hover{
+    background-color: #1b63c1;
+    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
 }
